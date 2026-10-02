@@ -4,29 +4,283 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Курсы</title>
+    <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
+        <div class="logo">
+            <span class="logo-icon"></span>
+            <img src="img/logo.svg" alt="Логотип">
+        </div>
         <nav>
             <ul>
                 <li><a href="index.html">Главная</a></li>
-                <li><a href="2.html">Курсы</a></li>
-                <li><a href="3.html">О нас</a></li>
+                <li><a href="2.html" class="active" >Курсы</a></li>
+                <li><a href="4.html">О нас</a></li>
             </ul>
         </nav>
     </header>
-    <main></main>
+    <main>
+        <section class="catalog">
+
+            <div class="catalog-head">
+                <h1>Каталог курсов</h1>
+                <p>Выберите язык и уровень — мы подберём программу</p>
+            </div>
+
+            <div class="filters">
+                <button class="filter-btn active">Все языки ▾</button>
+                <button class="filter-btn">Уровень ▾</button>
+                <button class="filter-btn">Формат ▾</button>
+                <button class="filter-btn">Длительность ▾</button>
+                <input class="search" type="text" placeholder="Поиск курса...">
+            </div>
+
+            <div class="catalog-list">
+
+                <div class="course">
+                    <div class="course-header">
+                        <div class="course-badge">EN</div>
+                        <div class="course-title">
+                            <h3>Английский</h3>
+                            <span>24 курса • 1 240 учеников</span>
+                        </div>
+                    </div>
+                    <div class="course-body">
+                        <div class="course-desc">
+                            <h4>Разговорный с нуля</h4>
+                            <p>8 недель • 2 раза в неделю<br>Живая практика с носителем</p>
+                        </div>
+                        <div class="course-footer">
+                            <span class="level">A1 → B1</span>
+                            <a href="3.html" class="link">Записаться &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="course">
+                    <div class="course-header">
+                        <div class="course-badge">DE</div>
+                        <div class="course-title">
+                            <h3>Немецкий</h3>
+                            <span>18 курсов • 890 учеников</span>
+                        </div>
+                    </div>
+                    <div class="course-body">
+                        <div class="course-desc">
+                            <h4>Для работы и карьеры</h4>
+                            <p>12 недель • 3 раза в неделю<br>Бизнес-лексика и грамматика</p>
+                        </div>
+                        <div class="course-footer">
+                            <span class="level">B1 → C1</span>
+                            <a href="#" class="link">Записаться &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="course">
+                    <div class="course-header">
+                        <div class="course-badge">ES</div>
+                        <div class="course-title">
+                            <h3>Испанский</h3>
+                            <span>14 курсов • 720 учеников</span>
+                        </div>
+                    </div>
+                    <div class="course-body">
+                        <div class="course-desc">
+                            <h4>Для путешествий</h4>
+                            <p>6 недель • 2 раза в неделю<br>Базовые фразы и произношение</p>
+                        </div>
+                        <div class="course-footer">
+                            <span class="level">A1 → A2</span>
+                            <a href="3.html" class="link">Записаться &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="course">
+                    <div class="course-header">
+                        <div class="course-badge">FR</div>
+                        <div class="course-title">
+                            <h3>Французский</h3>
+                            <span>12 курсов • 540 учеников</span>
+                        </div>
+                    </div>
+                    <div class="course-body">
+                        <div class="course-desc">
+                            <h4>Разговорный интенсив</h4>
+                            <p>8 недель • 3 раза в неделю<br>Погружение в язык</p>
+                        </div>
+                        <div class="course-footer">
+                            <span class="level">A2 → B2</span>
+                            <a href="3.html" class="link">Записаться &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="course">
+                    <div class="course-header">
+                        <div class="course-badge">CH</div>
+                        <div class="course-title">
+                            <h3>Китайский</h3>
+                            <span>10 курсов • 430 учеников</span>
+                        </div>
+                    </div>
+                    <div class="course-body">
+                        <div class="course-desc">
+                            <h4>HSK подготовка</h4>
+                            <p>16 недель • 2 раза в неделю<br>Иероглифика и аудирование</p>
+                        </div>
+                        <div class="course-footer">
+                            <span class="level">A1 → HSK 3</span>
+                            <a href="3.html" class="link">Записаться &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="course">
+                    <div class="course-header">
+                        <div class="course-badge">JA</div>
+                        <div class="course-title">
+                            <h3>Японский</h3>
+                            <span>8 курсов • 390 учеников</span>
+                        </div>
+                    </div>
+                    <div class="course-body">
+                        <div class="course-desc">
+                            <h4>С нуля до JLPT N4</h4>
+                            <p>20 недель • 2 раза в неделю<br>Кана, иероглифы, грамматика</p>
+                        </div>
+                        <div class="course-footer">
+                            <span class="level">A1 → N4</span>
+                            <a href="3.html" class="link">Записаться &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="course">
+                    <div class="course-header">
+                        <div class="course-badge">IT</div>
+                        <div class="course-title">
+                            <h3>Итальянский</h3>
+                            <span>9 курсов • 380 учеников</span>
+                        </div>
+                    </div>
+                    <div class="course-body">
+                        <div class="course-desc">
+                            <h4>Культура и язык</h4>
+                            <p>10 недель • 2 раза в неделю<br>Искусство, кухня, общение</p>
+                        </div>
+                        <div class="course-footer">
+                            <span class="level">A1 → B1</span>
+                            <a href="3.html" class="link">Записаться &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="course">
+                    <div class="course-header">
+                        <div class="course-badge">PT</div>
+                        <div class="course-title">
+                            <h3>Португальский</h3>
+                            <span>6 курсов • 290 учеников</span>
+                        </div>
+                    </div>
+                    <div class="course-body">
+                        <div class="course-desc">
+                            <h4>Бразильский вариант</h4>
+                            <p>8 недель • 2 раза в неделю<br>Акцент на бразильском произношении</p>
+                        </div>
+                        <div class="course-footer">
+                            <span class="level">A1 → B1</span>
+                            <a href="3.html" class="link">Записаться &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="course">
+                    <div class="course-header">
+                        <div class="course-badge">KO</div>
+                        <div class="course-title">
+                            <h3>Корейский</h3>
+                            <span>7 курсов • 330 учеников</span>
+                        </div>
+                    </div>
+                    <div class="course-body">
+                        <div class="course-desc">
+                            <h4>K-pop и культура</h4>
+                            <p>10 недель • 2 раза в неделю<br>Хангыль, сленг, сериалы</p>
+                        </div>
+                        <div class="course-footer">
+                            <span class="level">A1 → TOPIK 1</span>
+                            <a href="3.html" class="link">Записаться &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="pagination">
+                <a href="#" class="page active">1</a>
+                <a href="#" class="page">2</a>
+                <a href="#" class="page">3</a>
+                <a href="#" class="page">&rarr;</a>
+            </div>
+
+        </section>
+
+        <section class="cta">
+            <div class="cta-container">
+                <div class="cta-text">
+                    <h2>Не нашли нужный курс?</h2>
+                    <p>Напишите нам — подберём индивидуальную программу</p>
+                </div>
+                <a href="4.html" class="btn-cta">Связаться с нами &rarr;</a>
+            </div>
+        </section>
+    </main>
     <footer>
-        <nav>
+        <div class="footer-container">
+        <div class="footer-colum footer-info">
+            <h3 class="footer-logo">LANGGANG</h3>
+            <p>Онлайн-школа иностранных языков с 2019 года.</p>
+        </div>
+
+        <div class="footer-colum">
+            <h3>Навигация</h3>
+            <nav>
             <ul>
                 <li><a href="index.html">Главная</a></li>
                 <li><a href="2.html">Курсы</a></li>
-                <li><a href="3.html">О нас</a></li>
+                <li><a href="4.html">О нас</a></li>
             </ul>
-        </nav>
+            </nav>
+        </div>
+
+        <div class="footer-colum">
+            <h3>Контакты</h3>
+            <ul class="footer-contacts">
+                <li><a href="mailto:info@langgang.ru">info@langgang.ru</a></li>
+                <li><a href="tel:+78001234567">+7 (800) 123-45-67</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-colum">
+            <h3>Соцсети</h3>
+            <div class="social-icons">
+                <a href="#" class="social-icon">TG</a>
+                <a href="#" class="social-icon">VK</a>
+                <a href="#" class="social-icon">YT</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p>© 2026 LANGGANG. Все права защищены.</p>
+    </div>
     </footer>
 </body>
 </html>

@@ -509,7 +509,7 @@ header nav>ul>li>a.active {
 }
 
 
-.btn-record:hover {
+.btn-record:hover{
     background-color: #143020; 
     transform: translateY(-2px); 
 }
@@ -540,38 +540,38 @@ footer{
   flex: 1.5;
 }
 
-.footer-colum >h3 {
+.footer-colum > h3 {
   color: #FFFFFF;
   font-size: 16px;
   font-weight: 700;
   margin: 0 0 16px 0;
 }
 
-.footer-info >p {
+.footer-info p {
   color: #C2DB8E;
   font-size: 14px;
   line-height: 1.6;
   margin: 0;
 }
 
-.footer-colum>ul {
+.footer-colum ul {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
-.footer-colum>li {
+.footer-colum >li {
   margin-bottom: 10px;
 }
 
-.footer-colum >li>a {
+.footer-colum li a {
   color: #C2DB8E;
   text-decoration: none;
   font-size: 14px;
   transition: color 0.3s;
 }
 
-.footer-colum >li>a:hover {
+.footer-colum li a:hover {
   color: #FFFFFF;
 }
 
@@ -595,7 +595,7 @@ footer{
   transition: background-color 0.3s, transform 0.3s;
 }
 
-.social-icon:hover{
+.social-icon:hover {
   background-color: #4a7a4e;
   transform: scale(1.1);
 }
@@ -609,8 +609,192 @@ footer{
   box-sizing: border-box;
 }
 
-.footer-bottom>p {
+.footer-bottom > p {
   color: #C2DB8E;
   font-size: 13px;
   margin: 0;
+}
+
+.catalog {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px 0;
+  box-sizing: border-box;
+}
+
+.catalog-head {
+  margin-bottom: 25px;
+}
+
+.catalog-head>h1 {
+  font-size: 32px;
+  font-weight: 800;
+  color: #1E4630;
+  margin: 0 0 10px 0;
+}
+
+.catalog-head>p{
+  font-size: 16px;
+  color: #5C9460;
+  margin: 0;
+}
+
+
+.filters {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: #F5F7F3;
+  border-radius: 15px;
+  padding: 15px 20px;
+  margin-bottom: 30px;
+}
+
+.filter-btn{
+  background-color: #FFFFFF;
+  color: #1E4630;
+  border: 1px solid #A8C8AE;
+  border-radius: 20px;
+  padding: 8px 18px;
+  font-family: Inter, sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.filter-btn:hover{
+  background-color: #E8F1E5;
+}
+
+.filter-btn.active {
+  background-color: #6FA82E;
+  border-color: #6FA82E;
+  color: #FFFFFF;
+}
+
+.search{
+  margin-left: auto;
+  width: 220px;
+  padding: 8px 18px;
+  border: 1px solid #A8C8AE;
+  border-radius: 20px;
+  font-family: Inter, sans-serif;
+  font-size: 13px;
+  color: #1E4630;
+  background-color: #FFFFFF;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.search:focus {
+  border-color: #6FA82E;
+}
+
+
+.catalog-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+
+.catalog-list>.course {
+  width: calc((100% - 50px) / 3);
+}
+
+.catalog-list>.course:nth-child(even) .course-header {
+  background-color: #A8C8AE;
+}
+
+.course-badge {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: #1E4630;
+  color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 40px 0 60px;
+}
+
+.page {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background-color: #E8F1E5;
+  color: #1E4630;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease;
+}
+
+.page:hover {
+  background-color: #C2DB8E;
+}
+
+.page >.active{
+  background-color: #6FA82E;
+  color: #FFFFFF;
+}
+
+
+.cta{
+  background-color: #1E4630;
+  padding: 40px 0;
+  border-bottom: 1px solid #2d5a45;
+}
+
+.cta-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+.cta-text>h2{
+  color: #FFFFFF;
+  font-size: 20px;
+  font-weight: 700;
+  margin: 0 0 6px 0;
+}
+
+.cta-text>p {
+  color: #C2DB8E;
+  font-size: 13px;
+  margin: 0;
+}
+
+.btn-cta{
+  background-color: #6FA82E;
+  color: #FFFFFF;
+  padding: 14px 35px;
+  border-radius: 30px;
+  font-size: 15px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  white-space: nowrap;
+}
+
+.btn-cta:hover{
+  background-color: #5C9460;
+  transform: translateY(-2px);
 }
