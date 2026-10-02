@@ -798,3 +798,139 @@ footer{
   background-color: #5C9460;
   transform: translateY(-2px);
 }
+.c-wrap {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.c-section {
+  padding: 70px 0;
+}
+
+.c-green {
+  background-color: #C2DB8E;
+}
+
+.c-gray {
+  background-color: #F5F7F3;
+}
+
+.c-title {
+  font-size: 32px;
+  font-weight: 800;
+  color: #1E4630;
+  margin: 0 0 10px 0;
+}
+
+.c-subtitle {
+  font-size: 16px;
+  color: #5C9460;
+  margin: 0 0 40px 0;
+}
+
+.c-green .c-subtitle {
+  color: #4A7A4E;
+}
+
+.c-center {
+  text-align: center;
+}
+
+
+.c-hero {
+  background-color: #C2DB8E;
+  padding: 40px 0 70px;
+}
+
+.c-hero-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.c-hero-text {
+  max-width: 670px;
+}
+
+.c-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background-color: #1E4630;
+  color: #FFFFFF;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 5px 14px 5px 5px;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+
+.c-badge-icon {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: #6FA82E;
+  font-size: 10px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.c-hero-text>h1 {
+  font-size: 44px;
+  font-weight: 800;
+  color: #224F34;
+  line-height: 1.2;
+  margin: 0 0 20px 0;
+}
+
+.c-hero-text>p {
+  font-size: 16px;
+  color: #4A7A4E;
+  line-height: 1.6;
+  margin: 0 0 25px 0;
+}
+
+.c-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.c-tag {
+  background-color: #FFFFFF;
+  color: #1E4630;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 7px 16px;
+  border-radius: 20px;
+}
+
+.c-buy {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.c-price-sum {
+  font-size: 32px;
+  font-weight: 800;
+  color: #1E4630;
+}
+
+.c-price-note {
+  font-size: 12px;
+  color: #4A7A4E;
+}
+
+.c-hero-img {
+  width: 430px;
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
