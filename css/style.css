@@ -1259,7 +1259,6 @@ footer{
   height: auto;
   display: block;
 }
-блок2 страницы 3
 .c-stats {
   display: flex;
   gap: 20px;
@@ -1466,4 +1465,261 @@ footer{
 .c-cta-btn:hover{
   background-color: #143020;
   transform: translateY(-2px);
+}
+
+
+
+
+.wrap {
+  max-width: 1176px;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.section-title {
+  font-size: 36px;
+  font-weight: 800;
+  color: #1E4630;
+  text-align: center;
+  margin: 0 0 40px 0;
+}
+
+.section-subtitle {
+  font-size: 16px;
+  color: #5C9460;
+  text-align: center;
+  margin: -25px 0 40px 0;
+}
+
+/* ===== ШАПКА СТРАНИЦЫ ===== */
+.about-hero {
+  background-color: #1E4630;
+  padding: 70px 0 65px;
+}
+
+.about-hero h1 {
+  font-size: 44px;
+  font-weight: 800;
+  color: #FFFFFF;
+  margin: 0 0 20px 0;
+}
+
+.about-hero p {
+  font-size: 20px;
+  line-height: 1.5;
+  color: #C2DB8E;
+  max-width: 760px;
+  margin: 0 0 30px 0;
+}
+
+.hero-stats {
+  display: flex;
+  gap: 16px;
+}
+
+.hero-stat {
+  background-color: #5C9460;
+  border-radius: 20px;
+  padding: 20px 22px;
+  min-width: 150px;
+  box-sizing: border-box;
+}
+
+.hero-stat-num {
+  font-size: 32px;
+  font-weight: 800;
+  color: #FFFFFF;
+  margin-bottom: 4px;
+}
+
+.hero-stat-label {
+  font-size: 12px;
+  color: #C2DB8E;
+}
+
+/* ===== МИССИЯ ===== */
+.mission {
+  background-color: #FFFFFF;
+  padding: 70px 0;
+}
+
+.mission-box {
+  background-color: #F5F7F3;
+  border-radius: 20px;
+  padding: 30px 32px;
+}
+
+.mission-box>p {
+  font-size: 18px;
+  line-height: 1.7;
+  color: #1E4630;
+  margin: 0;
+}
+
+/* ===== ЦЕННОСТИ ===== */
+.values {
+  background-color: #F5F7F3;
+  padding: 70px 0;
+}
+
+.values-list {
+  display: flex;
+  gap: 32px;
+}
+
+.value-card {
+  flex: 1;
+  background-color: #C2DB8E;
+  border-radius: 20px;
+  padding: 32px;
+}
+
+.value-num {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #1E4630;
+  color: #FFFFFF;
+  font-size: 14px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.value-card h3 {
+  font-size: 18px;
+  font-weight: 700;
+  color: #1E4630;
+  margin: 0 0 8px 0;
+}
+
+.value-card p {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #5C9460;
+  margin: 0;
+}
+
+/* ===== КОМАНДА ===== */
+.team {
+  background-color: #C2DB8E;
+  padding: 70px 0;
+}
+
+.team-list {
+  display: flex;
+  gap: 32px;
+}
+
+.team-card {
+  flex: 1;
+  background-color: #F5F7F3;
+  border-radius: 20px;
+  padding: 32px 20px;
+  text-align: center;
+}
+
+.team-avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: #1E4630;
+  color: #FFFFFF;
+  font-size: 24px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 15px auto;
+}
+
+.team-card h3 {
+  font-size: 18px;
+  font-weight: 700;
+  color: #1E4630;
+  margin: 0 0 5px 0;
+}
+
+.team-card span {
+  display: block;
+  font-size: 13px;
+  color: #5C9460;
+  margin-bottom: 12px;
+}
+
+.team-card p {
+  font-size: 13px;
+  line-height: 1.5;
+  color: #1E4630;
+  margin: 0;
+}
+
+/* ===== УЧЕНИКИ ===== */
+.students {
+  background-color: #F5F7F3;
+  padding: 70px 0;
+}
+
+.students-list {
+  display: flex;
+  gap: 32px;
+}
+
+.review-card {
+  flex: 1;
+  background-color: #1E4630;
+  border-radius: 20px;
+  padding: 32px;
+  color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.review-header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #6FA82E;
+  color: #FFFFFF;
+  font-size: 16px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.reviewer-info>h3 {
+  font-size: 16px;
+  font-weight: 700;
+  margin: 0 0 4px 0;
+}
+
+.reviewer-info>p {
+  font-size: 11px;
+  color: #A8C8AE;
+  margin: 0;
+}
+
+.stars {
+  font-size: 14px;
+  letter-spacing: 4px;
+  color: #6FA82E;
+}
+
+.text {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #FFFFFF;
+  margin: 0;
 }
