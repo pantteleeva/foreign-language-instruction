@@ -15,6 +15,11 @@
 
 <body>
     <header>
+        <div class="burger" id="burger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
         <div class="logo">
             <span class="logo-icon"></span>
             <img src="img/logo.svg" alt="Логотип">
@@ -122,14 +127,14 @@
                     </div>
 
                     <div class="course">
-                        <div class = "de">
-                        <div class="course-header">
-                            <img src="img/de.svg" alt="Немецкий" class="course-icon">
-                            <div class="course-title">
-                                <h3>Немецкий</h3>
-                                <span>18 курсов • 890 учеников</span>
+                        <div class="de">
+                            <div class="course-header">
+                                <img src="img/de.svg" alt="Немецкий" class="course-icon">
+                                <div class="course-title">
+                                    <h3>Немецкий</h3>
+                                    <span>18 курсов • 890 учеников</span>
+                                </div>
                             </div>
-                        </div>
                         </div>
                         <div class="course-body">
                             <div class="course-desc">
@@ -171,116 +176,122 @@
 
 
         <section class="reviews">
-    <div class="container">
-        <h2>Отзывы учеников</h2>
-        
-        <div class="reviews">
-            <div class="review-card">
-                <div class="review-header">
-                    <div class="avatar">АМ</div>
-                    <div class="reviewer-info">
-                        <h3>Анна Морозова</h3>
-                        <p>Английский · A2 → B2</p>
+            <div class="container">
+                <h2>Отзывы учеников</h2>
+
+                <div class="reviews">
+                    <div class="review-card">
+                        <div class="review-header">
+                            <div class="avatar">АМ</div>
+                            <div class="reviewer-info">
+                                <h3>Анна Морозова</h3>
+                                <p>Английский · A2 → B2</p>
+                            </div>
+                        </div>
+                        <div class="rating">
+                            <span class="square"></span>
+                            <span class="square"></span>
+                            <span class="square"></span>
+                            <span class="square"></span>
+                            <span class="square"></span>
+                        </div>
+                        <p class="text">«За два месяца перестала бояться говорить — уроки как дружеская беседа»</p>
+                    </div>
+
+                    <div class="review-card">
+                        <div class="review-header">
+                            <div class="avatar">ДК</div>
+                            <div class="reviewer-info">
+                                <h3>Дмитрий Козлов</h3>
+                                <p>Немецкий · B1 → C1</p>
+                            </div>
+                        </div>
+                        <div class="rating">
+                            <span class="square"></span>
+                            <span class="square"></span>
+                            <span class="square"></span>
+                            <span class="square"></span>
+                            <span class="square"></span>
+                        </div>
+                        <p class="text">«Прошёл курс для работы. Теперь свободно общаюсь с коллегами из Берлина.»</p>
+                    </div>
+
+                    <div class="review-card">
+                        <div class="review-header">
+                            <div class="avatar">ЕС</div>
+                            <div class="reviewer-info">
+                                <h3>Елена Соколова</h3>
+                                <p>Испанский · A1 → B1</p>
+                            </div>
+                        </div>
+                        <div class="rating">
+                            <span class="square"></span>
+                            <span class="square"></span>
+                            <span class="square"></span>
+                            <span class="square"></span>
+                            <span class=" square square-last"></span>
+                        </div>
+                        <p class="text">«Отличный курс для путешествий! Выучила базовые фразы за 6 недель.»</p>
                     </div>
                 </div>
-                <div class="rating">
-                    <span class="square"></span>
-                    <span class="square"></span>
-                    <span class="square"></span>
-                    <span class="square"></span>
-                    <span class="square"></span>
-                </div>
-                <p class="text">«За два месяца перестала бояться говорить — уроки как дружеская беседа»</p>
+            </div>
+        </section>
+
+        <section class="container-record">
+            <div class="text2">
+                <h2>Готов начать учиться?</h2>
+                <button class="btn-record">Записаться →</button>
             </div>
 
-            <div class="review-card">
-                <div class="review-header">
-                    <div class="avatar">ДК</div>
-                    <div class="reviewer-info">
-                        <h3>Дмитрий Козлов</h3>
-                        <p>Немецкий · B1 → C1</p>
-                    </div>
-                </div>
-                <div class="rating">
-                    <span class="square"></span>
-                    <span class="square"></span>
-                    <span class="square"></span>
-                    <span class="square"></span>
-                    <span class="square"></span>
-                </div>
-                <p class="text">«Прошёл курс для работы. Теперь свободно общаюсь с коллегами из Берлина.»</p>
-            </div>
-
-            <div class="review-card">
-                <div class="review-header">
-                    <div class="avatar">ЕС</div>
-                    <div class="reviewer-info">
-                        <h3>Елена Соколова</h3>
-                        <p>Испанский · A1 → B1</p>
-                    </div>
-                </div>
-                <div class="rating">
-                    <span class="square"></span>
-                    <span class="square"></span>
-                    <span class="square"></span>
-                    <span class="square"></span>
-                    <span class=" square square-last"></span> 
-                </div>
-                <p class="text">«Отличный курс для путешествий! Выучила базовые фразы за 6 недель.»</p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class = "container-record">
-    <div class = "text2">
-        <h2>Готов начать учиться?</h2>
-        <button class ="btn-record">Записаться →</button>
-    </div>
-
-</section>
+        </section>
     </main>
 
     <footer>
         <div class="footer-container">
-        <div class="footer-colum footer-info">
-            <h3 class="footer-logo">LANGGANG</h3>
-            <p>Онлайн-школа иностранных языков с 2019 года.</p>
-        </div>
+            <div class="footer-colum footer-info">
+                <h3 class="footer-logo">LANGGANG</h3>
+                <p>Онлайн-школа иностранных языков с 2019 года.</p>
+            </div>
 
-        <div class="footer-colum">
-            <h3>Навигация</h3>
-            <nav>
-            <ul>
-                <li><a href="index.html">Главная</a></li>
-                <li><a href="2.html">Курсы</a></li>
-                <li><a href="4.html">О нас</a></li>
-            </ul>
-            </nav>
-        </div>
+            <div class="footer-colum">
+                <h3>Навигация</h3>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="2.html">Курсы</a></li>
+                        <li><a href="4.html">О нас</a></li>
+                    </ul>
+                </nav>
+            </div>
 
-        <div class="footer-colum">
-            <h3>Контакты</h3>
-            <ul class="footer-contacts">
-                <li><a href="mailto:info@langgang.ru">info@langgang.ru</a></li>
-                <li><a href="tel:+78001234567">+7 (800) 123-45-67</a></li>
-            </ul>
-        </div>
+            <div class="footer-colum">
+                <h3>Контакты</h3>
+                <ul class="footer-contacts">
+                    <li><a href="mailto:info@langgang.ru">info@langgang.ru</a></li>
+                    <li><a href="tel:+78001234567">+7 (800) 123-45-67</a></li>
+                </ul>
+            </div>
 
-        <div class="footer-colum">
-            <h3>Соцсети</h3>
-            <div class="social-icons">
-                <a href="#" class="social-icon">TG</a>
-                <a href="#" class="social-icon">VK</a>
-                <a href="#" class="social-icon">YT</a>
+            <div class="footer-colum">
+                <h3>Соцсети</h3>
+                <div class="social-icons">
+                    <a href="#" class="social-icon">TG</a>
+                    <a href="#" class="social-icon">VK</a>
+                    <a href="#" class="social-icon">YT</a>
+                </div>
             </div>
         </div>
-    </div>
 
-    <div class="footer-bottom">
-        <p>© 2026 LANGGANG. Все права защищены.</p>
-    </div>
+        <div class="footer-bottom">
+            <p>© 2026 LANGGANG. Все права защищены.</p>
+        </div>
     </footer>
+
+    <script>
+    document.getElementById('burger').onclick = function () {
+        document.querySelector('header nav').classList.toggle('open');
+    };
+</script>
 </body>
 
 </html>
