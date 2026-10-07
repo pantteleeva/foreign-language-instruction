@@ -414,6 +414,12 @@
     document.getElementById('burger').onclick = function () {
         document.querySelector('header nav').classList.toggle('open');
     };
+
+    document.querySelectorAll('.footer-colum > h3').forEach(function (h) {
+        h.onclick = function () {
+            h.parentElement.classList.toggle('open');
+        };
+    });
 </script>
 </body>
 
