@@ -18,7 +18,6 @@
   --color-bg-mint: #E8F1E5;
   --color-line: #EEF3EC;
   --color-border-soft: #D9E8DA;
-
   --font-main: Inter, sans-serif;
   --container-width: 1200px;
 }
@@ -47,7 +46,7 @@ header {
   gap: 10px;
 }
 
-.logo>img {
+.logo img {
   height: 70px;
   width: auto;
   display: block;
@@ -64,7 +63,7 @@ header nav {
   transform: translateX(-50%);
 }
 
-header nav>ul {
+header nav ul {
   display: flex;
   list-style: none;
   gap: 30px;
@@ -72,7 +71,7 @@ header nav>ul {
   padding: 0;
 }
 
-header nav>ul>li>a {
+header nav ul li a {
   text-decoration: none;
   color: var(--color-black);
   font-size: 24px;
@@ -81,8 +80,8 @@ header nav>ul>li>a {
   padding-bottom: 4px;
 }
 
-header nav>ul>li>a:hover,
-header nav>ul>li>a.active {
+header nav ul li a:hover,
+header nav ul li a.active {
   color: var(--color-green-mid);
 }
 
@@ -91,7 +90,7 @@ header nav>ul>li>a.active {
   padding: 80px 0;
 }
 
-.banner>.container {
+.banner .container {
   max-width: var(--container-width);
   margin: 0 auto;
   padding: 0 20px;
@@ -105,7 +104,7 @@ header nav>ul>li>a.active {
   max-width: 550px;
 }
 
-.banner-content>h1 {
+.banner-content h1 {
   font-size: 48px;
   font-weight: 800;
   color: var(--color-forest-title);
@@ -113,7 +112,7 @@ header nav>ul>li>a.active {
   margin-bottom: 20px;
 }
 
-.banner-content>p {
+.banner-content p {
   font-size: 16px;
   color: var(--color-text-banner);
   line-height: 1.6;
@@ -201,7 +200,7 @@ header nav>ul>li>a.active {
   gap: 25px;
 }
 
-.banner-image>img {
+.banner-image img {
   width: 100%;
   height: auto;
   display: block;
@@ -239,16 +238,16 @@ header nav>ul>li>a.active {
   margin-bottom: 40px;
 }
 
-.title>h2,
-.title2>h2 {
+.title h2,
+.title2 h2 {
   font-size: 32px;
   font-weight: 800;
   color: var(--color-forest);
   margin-bottom: 10px;
 }
 
-.title>p,
-.title2>p {
+.title p,
+.title2 p {
   font-size: 16px;
   color: var(--color-green-mid);
   margin: 0;
@@ -273,13 +272,13 @@ header nav>ul>li>a.active {
   transform: translateY(-5px);
 }
 
-.advantage>img {
+.advantage img {
   height: 50px;
   width: auto;
   margin-bottom: 15px;
 }
 
-.advantage>h3 {
+.advantage h3 {
   font-size: 20px;
   font-weight: 700;
   color: var(--color-forest);
@@ -322,7 +321,7 @@ header nav>ul>li>a.active {
   background-color: var(--color-lime);
 }
 
-.de>.course-header {
+.de .course-header {
   background-color: var(--color-sage);
 }
 
@@ -332,14 +331,14 @@ header nav>ul>li>a.active {
   object-fit: contain;
 }
 
-.course-title>h3 {
+.course-title h3 {
   font-size: 20px;
   font-weight: 700;
   color: var(--color-forest);
   margin: 0 0 5px 0;
 }
 
-.course-title>span {
+.course-title span {
   font-size: 13px;
   color: var(--color-green-mid);
 }
@@ -355,14 +354,14 @@ header nav>ul>li>a.active {
   flex-grow: 1;
 }
 
-.course-desc>h4 {
+.course-desc h4 {
   font-size: 17px;
   font-weight: 700;
   color: var(--color-forest);
   margin: 0 0 10px 0;
 }
 
-.course-desc>p {
+.course-desc p {
   font-size: 14px;
   color: var(--color-green-mid);
   line-height: 1.5;
@@ -403,7 +402,7 @@ header nav>ul>li>a.active {
   margin: 0 auto;
 }
 
-.container>h2 {
+.container h2 {
   color: var(--color-forest);
   font-size: 32px;
   font-weight: 800;
@@ -450,7 +449,7 @@ header nav>ul>li>a.active {
   width: 100%;
 }
 
-.text2>h2 {
+.text2 h2 {
   color: var(--color-white);
   font-size: 28px;
   font-weight: 700;
@@ -501,7 +500,7 @@ footer {
   flex: 1.5;
 }
 
-.footer-colum>h3 {
+.footer-colum h3 {
   color: var(--color-white);
   font-size: 16px;
   font-weight: 700;
@@ -521,7 +520,7 @@ footer {
   margin: 0;
 }
 
-.footer-colum ul > li {
+.footer-colum ul li {
   margin-bottom: 10px;
 }
 
@@ -570,7 +569,7 @@ footer {
   box-sizing: border-box;
 }
 
-.footer-bottom>p {
+.footer-bottom p {
   color: var(--color-lime);
   font-size: 13px;
   margin: 0;
@@ -587,14 +586,14 @@ footer {
   margin-bottom: 25px;
 }
 
-.catalog-head>h1 {
+.catalog-head h1 {
   font-size: 32px;
   font-weight: 800;
   color: var(--color-forest);
   margin: 0 0 10px 0;
 }
 
-.catalog-head>p {
+.catalog-head p {
   font-size: 16px;
   color: var(--color-green-mid);
   margin: 0;
@@ -652,16 +651,12 @@ footer {
 }
 
 .catalog-list {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   gap: 25px;
 }
 
-.catalog-list>.course {
-  width: calc((100% - 50px) / 3);
-}
-
-.catalog-list>.course:nth-child(even) .course-header {
+.catalog-list .course:nth-child(even) .course-header {
   background-color: var(--color-sage);
 }
 
@@ -705,7 +700,7 @@ footer {
   background-color: var(--color-lime);
 }
 
-.page>.active {
+.page.active {
   background-color: var(--color-accent);
   color: var(--color-white);
 }
@@ -726,14 +721,14 @@ footer {
   box-sizing: border-box;
 }
 
-.cta-text>h2 {
+.cta-text h2 {
   color: var(--color-white);
   font-size: 20px;
   font-weight: 700;
   margin: 0 0 6px 0;
 }
 
-.cta-text>p {
+.cta-text p {
   color: var(--color-lime);
   font-size: 13px;
   margin: 0;
@@ -761,12 +756,6 @@ footer {
   margin: 0 auto;
   padding: 0 20px;
   box-sizing: border-box;
-}
-
-.c-outcome>p {
-  font-size: 13px;
-  color: var(--color-green-mid);
-  margin: 0;
 }
 
 .c-program {
@@ -828,7 +817,7 @@ footer {
   box-sizing: border-box;
 }
 
-.c-teacher>img {
+.c-teacher img {
   width: 450px;
   height: 300px;
   object-fit: cover;
@@ -848,14 +837,14 @@ footer {
   margin-bottom: 10px;
 }
 
-.c-teacher-info>h3 {
+.c-teacher-info h3 {
   font-size: 30px;
   font-weight: 800;
   color: var(--color-white);
   margin: 0 0 15px 0;
 }
 
-.c-teacher-info>p {
+.c-teacher-info p {
   font-size: 15px;
   line-height: 1.6;
   color: var(--color-bg-mint);
@@ -885,7 +874,7 @@ footer {
   gap: 10px;
 }
 
-.c-teacher-tags>span {
+.c-teacher-tags span {
   border: 1px solid var(--color-green-mid);
   color: var(--color-white);
   font-size: 12px;
@@ -967,7 +956,7 @@ footer {
   justify-content: center;
 }
 
-.c-hero-text>h1 {
+.c-hero-text h1 {
   font-size: 44px;
   font-weight: 800;
   color: var(--color-forest-title);
@@ -975,7 +964,7 @@ footer {
   margin: 0 0 20px 0;
 }
 
-.c-hero-text>p {
+.c-hero-text p {
   font-size: 16px;
   color: var(--color-green-text);
   line-height: 1.6;
@@ -1116,20 +1105,20 @@ footer {
   margin-bottom: 20px;
 }
 
-.c-icon>img {
+.c-icon img {
   width: 26px;
   height: 26px;
   display: block;
 }
 
-.c-include>h3 {
+.c-include h3 {
   font-size: 17px;
   font-weight: 700;
   color: var(--color-forest);
   margin: 0 0 10px 0;
 }
 
-.c-include>p {
+.c-include p {
   font-size: 14px;
   color: var(--color-green-mid);
   line-height: 1.5;
@@ -1151,7 +1140,7 @@ footer {
   padding: 28px 0;
 }
 
-.c-faq-item>summary {
+.c-faq-item summary {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -1172,7 +1161,7 @@ footer {
   color: var(--color-accent);
 }
 
-.c-faq-item>p {
+.c-faq-item p {
   font-size: 14px;
   color: var(--color-green-mid);
   line-height: 1.6;
@@ -1191,14 +1180,14 @@ footer {
   gap: 30px;
 }
 
-.c-cta-inner>h2 {
+.c-cta-inner h2 {
   font-size: 24px;
   font-weight: 800;
   color: var(--color-white);
   margin: 0 0 6px 0;
 }
 
-.c-cta-inner>p {
+.c-cta-inner p {
   font-size: 13px;
   color: var(--color-bg-mint);
   margin: 0;
@@ -1299,7 +1288,7 @@ footer {
   padding: 30px 32px;
 }
 
-.mission-box>p {
+.mission-box p {
   font-size: 18px;
   line-height: 1.7;
   color: var(--color-forest);
@@ -1447,13 +1436,13 @@ footer {
   flex-shrink: 0;
 }
 
-.reviewer-info>h3 {
+.reviewer-info h3 {
   margin: 0 0 4px 0;
   font-size: 16px;
   font-weight: 700;
 }
 
-.reviewer-info>p {
+.reviewer-info p {
   margin: 0;
   font-size: 11px;
   color: var(--color-sage);
@@ -1476,7 +1465,8 @@ footer {
   display: none;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1023px) {
+
   .advantage,
   .course,
   .review-card,
@@ -1502,7 +1492,7 @@ footer {
     cursor: pointer;
   }
 
-  .burger >span {
+  .burger span {
     display: block;
     width: 50px;
     height: 3px;
@@ -1510,7 +1500,7 @@ footer {
     background-color: var(--color-green-mid);
   }
 
-  header>nav {
+  header nav {
     display: none;
     top: 100%;
     left: 0;
@@ -1522,15 +1512,15 @@ footer {
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.08);
   }
 
-  header > nav.open {
+  header nav.open {
     display: block;
   }
 
-  header > nav>ul {
+  header nav ul {
     display: block;
   }
 
-  header > nav>ul >li {
+  header nav ul li {
     margin-bottom: 18px;
   }
 
@@ -1538,7 +1528,7 @@ footer {
     padding: 50px 0;
   }
 
-  .banner > .container {
+  .banner .container {
     padding: 0 30px;
     gap: 30px;
     align-items: flex-start;
@@ -1549,11 +1539,11 @@ footer {
     max-width: none;
   }
 
-  .banner-content >h1 {
+  .banner-content h1 {
     font-size: 34px;
   }
 
-  .banner-content >p {
+  .banner-content p {
     font-size: 15px;
   }
 
@@ -1580,6 +1570,7 @@ footer {
     flex-shrink: 0;
     gap: 15px;
   }
+
   .advantages {
     padding: 50px 30px;
   }
@@ -1600,17 +1591,17 @@ footer {
     width: 48%;
   }
 
-  .advantage >  img {
+  .advantage img {
     float: left;
     margin: 0 20px 0 0;
   }
 
-  .advantage >h3 {
+  .advantage h3 {
     margin: 0;
     padding-top: 12px;
   }
 
-  .advantage > p {
+  .advantage p {
     clear: both;
     padding-top: 15px;
   }
@@ -1630,7 +1621,7 @@ footer {
     padding: 20px;
   }
 
-  .course-title > h3 {
+  .course-title h3 {
     font-size: 18px;
   }
 
@@ -1638,15 +1629,8 @@ footer {
     padding: 50px 20px;
   }
 
-  .reviews > .container {
+  .reviews .container {
     width: 100%;
-  }
-
-  .reviews > .reviews {
-    padding: 0;
-    margin-top: 30px;
-    justify-content: center;
-    gap: 3%;
   }
 
   .review-card {
@@ -1677,19 +1661,19 @@ footer {
     margin-left: 0;
   }
 
-  .footer-info > .footer-logo {
+  .footer-info .footer-logo {
     font-size: 36px;
     margin-bottom: 10px;
   }
 
-  .footer-colum > h3 {
+  .footer-colum h3 {
     position: relative;
     padding-bottom: 12px;
     border-bottom: 1px solid var(--color-lime);
     font-size: 18px;
   }
 
-  .footer-colum > h3::after {
+  .footer-colum h3::after {
     content: "";
     position: absolute;
     right: 5px;
@@ -1701,45 +1685,45 @@ footer {
     transform: rotate(45deg);
   }
 
-  .footer-info > h3 {
+  .footer-info h3 {
     border: none;
     padding: 0;
   }
 
-  .footer-info > h3::after {
+  .footer-info h3::after {
     display: none;
   }
 
-  .footer-colum:last-child > h3 {
+  .footer-colum:last-child h3 {
     border: none;
     padding: 0;
   }
 
-  .footer-colum:last-child > h3::after {
+  .footer-colum:last-child h3::after {
     display: none;
   }
 
-  .footer-colum > nav,
+  .footer-colum nav,
   .footer-contacts {
     display: none;
   }
 
-  .footer-colum.open > nav,
-  .footer-colum.open > .footer-contacts {
+  .footer-colum.open nav,
+  .footer-colum.open .footer-contacts {
     display: block;
     margin-bottom: 15px;
   }
 
-  .footer-colum.open > h3::after {
+  .footer-colum.open h3::after {
     top: 8px;
     transform: rotate(-135deg);
   }
 
-  .footer-colum > h3 {
+  .footer-colum h3 {
     cursor: pointer;
   }
 
-  .footer-colum:last-child > h3 {
+  .footer-colum:last-child h3 {
     cursor: default;
   }
 
@@ -1762,11 +1746,8 @@ footer {
   }
 
   .catalog-list {
-    gap: 3%;
-  }
-
-  .catalog-list > .course {
-    width: 48%;
+    grid-template-columns: 48% 48%;
+    gap: 25px 3%;
   }
 
   .cta-container {
@@ -1794,7 +1775,7 @@ footer {
     max-width: 100%;
   }
 
-  .c-hero-text > h1 {
+  .c-hero-text h1 {
     font-size: 36px;
   }
 
@@ -1833,7 +1814,7 @@ footer {
     padding: 30px;
   }
 
-  .c-teacher > img {
+  .c-teacher img {
     display: block;
     width: 60%;
     height: 300px;
@@ -1861,7 +1842,7 @@ footer {
     text-align: center;
   }
 
-  .about-hero > p {
+  .about-hero p {
     margin: 0 auto 30px;
   }
 
@@ -1922,8 +1903,6 @@ footer {
 
   .advantages-container,
   .courses-container,
-  .reviews > .reviews,
-  .catalog-list,
   .c-includes,
   .c-review-list,
   .values-list,
@@ -1933,7 +1912,7 @@ footer {
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 767px) {
   header {
     height: 70px;
     padding: 0 20px;
@@ -1948,16 +1927,16 @@ footer {
     top: 18px;
   }
 
-  .burger >span {
+  .burger span {
     width: 36px;
     margin-top: 6px;
   }
 
-  header >nav {
+  header nav {
     padding: 15px 20px 20px;
   }
 
-  header >nav> ul >li> a {
+  header nav ul li a {
     font-size: 20px;
   }
 
@@ -1977,7 +1956,7 @@ footer {
     display: contents;
   }
 
-  .banner-content >h1 {
+  .banner-content h1 {
     order: 1;
     font-size: 28px;
     margin: 0;
@@ -1989,7 +1968,7 @@ footer {
     max-width: 420px;
   }
 
-  .banner-content >p {
+  .banner-content p {
     order: 3;
     font-size: 14px;
     margin: 0;
@@ -2032,8 +2011,8 @@ footer {
     padding: 40px 20px;
   }
 
-  .title >h2,
-  .title2 >h2 {
+  .title h2,
+  .title2 h2 {
     font-size: 26px;
   }
 
@@ -2047,7 +2026,7 @@ footer {
     margin-bottom: 15px;
   }
 
-  .advantage > p {
+  .advantage p {
     font-size: 14px;
   }
 
@@ -2055,7 +2034,7 @@ footer {
     display: block;
   }
 
-  .courses-container > .course {
+  .courses-container .course {
     width: 100%;
     margin-bottom: 20px;
   }
@@ -2073,7 +2052,7 @@ footer {
     margin-top: 20px;
   }
 
-  .container >h2 {
+  .container h2 {
     font-size: 26px;
   }
 
@@ -2097,7 +2076,7 @@ footer {
     gap: 15px;
   }
 
-  .text2 >h2 {
+  .text2 h2 {
     font-size: 22px;
   }
 
@@ -2130,7 +2109,7 @@ footer {
     padding: 30px 20px 0;
   }
 
-  .catalog-head >h1 {
+  .catalog-head h1 {
     font-size: 26px;
   }
 
@@ -2143,11 +2122,8 @@ footer {
   }
 
   .catalog-list {
+    grid-template-columns: 1fr;
     gap: 15px;
-  }
-
-  .catalog-list .course {
-    width: 100%;
   }
 
   .cta-container {
@@ -2176,11 +2152,11 @@ footer {
     padding: 20px 0 55px;
   }
 
-  .c-hero-text >h1 {
+  .c-hero-text h1 {
     font-size: 28px;
   }
 
-  .c-hero-text >p {
+  .c-hero-text p {
     font-size: 14px;
   }
 
@@ -2227,12 +2203,12 @@ footer {
     padding: 20px;
   }
 
-  .c-teacher> img {
+  .c-teacher img {
     width: 100%;
     height: 200px;
   }
 
-  .c-teacher-info >h3 {
+  .c-teacher-info h3 {
     font-size: 24px;
   }
 
@@ -2249,11 +2225,11 @@ footer {
     padding: 20px 15px;
   }
 
-  .c-include >h3 {
+  .c-include h3 {
     font-size: 15px;
   }
 
-  .c-include >p {
+  .c-include p {
     font-size: 13px;
   }
 
@@ -2265,7 +2241,7 @@ footer {
     display: block;
   }
 
-  .c-cta-inner>h2 {
+  .c-cta-inner h2 {
     font-size: 20px;
   }
 
@@ -2273,12 +2249,13 @@ footer {
     display: inline-block;
     margin-top: 15px;
   }
+
   .about-hero {
     padding: 35px 0;
     text-align: left;
   }
 
-  .about-hero>h1 {
+  .about-hero h1 {
     font-size: 28px;
   }
 
@@ -2321,7 +2298,7 @@ footer {
     padding: 20px;
   }
 
-  .mission-box >p {
+  .mission-box p {
     font-size: 16px;
   }
 
@@ -2340,12 +2317,12 @@ footer {
     margin: 0 15px 10px 0;
   }
 
-  .value-card >h3 {
+  .value-card h3 {
     margin: 0;
     padding-top: 12px;
   }
 
-  .value-card >p {
+  .value-card > p {
     clear: both;
   }
 
@@ -2368,11 +2345,11 @@ footer {
     margin: 0 15px 10px 0;
   }
 
-  .team-card>h3 {
+  .team-card > h3 {
     margin-top: 5px;
   }
 
-  .team-card>p {
+  .team-card > p {
     clear: both;
   }
 }
